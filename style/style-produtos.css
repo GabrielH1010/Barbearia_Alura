@@ -1,0 +1,117 @@
+/*------------------------------------------MODIFICANDO O ESTULO DA NAVEGAÇÃO DO TOPO------------------------------------*/
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;	/*Palavra em Maiusculo*/
+	color: #000000;		/*Cor da palavra*/
+	font-weight: bold;		/*Fonte da palavra*/
+	font-size: 25px;		/*Tamanho da palavra*/
+	text-decoration: none;		/*Remover sublinhado ou decoração da palavra*/
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+
+/*------------------------------------------EDITANDO OS PRDOTUOS OFERECIDOS----------------------------------------------*/
+
+.produtos li {
+	display: inline-block;		/*Colocando os produtos um do lado do outro, cabelo, barba e cabelo + barba*/
+	text-align: center;		/*Centralizando os conteudos do produto*/
+	width: 30%;		/*Tamanho dos campos que está os produtos*/
+	vertical-align: top;
+	margin: 0 1.5%;		/*Distanciamento um do outro*/
+	padding: 30px 20px;		/*Espaçamento interno dentro do conteiner de cada produto*/
+	box-sizing: border-box;		/*Para editar uma borda livremente*/
+
+	/*borda dos produtos*/
+	border: 3px solid #000000;	/*Expessura da borda, tipo e cor*/
+	border-radius: 10px;	/*Arredondamento da borda*/
+}
+
+.produtos li:active {
+	border-color: #088C19;		/*Quando você clicar no produto ele ficará verde*/
+}
+
+.produtos h2 {
+	font-size: 30px;	/*Tamanho da palavra*/
+	font-weight: bold;	
+}
+
+.produto-descricao {
+	font-size: 20px;	/*Tamanho da palavra*/
+}
+
+.produto-preco {
+	font-size: 22px;	/*Tamanho da palavra*/
+	font-weight: bold;	/*Fonte da palavra*/
+	margin-top: 10px;	/*Distanciamento do preço para a descrição do produto*/
+}
+
+/*------------------------------------------INTERAÇÃO COM O MOUSE EM CIMA------------------------------------------------*/
+
+nav a:hover{
+	background-color: #BBBBBB;		/*Cor de fundo quando passa o mouse em cima da palavra*/
+    color: rgb(236, 169, 69);		/*Cor da palavra quando o mouse estiver em cima*/
+	text-decoration: underline;		/*Quando o mouse etiver em cima, a palavra também vai ficar sublinhada*/
+}
+
+.produtos li:hover{
+	border-color: rgb(236, 169, 69);		/*A cor da borda irá mudar quando o mouse estiver em cima de um produto*/
+}
+
+.produtos li:hover h2{		/*Usando o houver h2 por conta do titulo qe está em h2 no index.html*/
+	font-size: 33px;		/*Quando o mouse passar em cima de um produto, o titulo ficará maior com 40px*/
+	color: rgb(236, 169, 69);		/*Cor do cabeçalho do produto também irá mudar quando o mouse estiver em cima*/
+}
+
+.produtos li:hover .produto-descricao{		/*Usando o houver .produto-descricao para mudar a descrição quando o mouse passa em cima*/
+	font-size: 23px;		
+	color: rgb(236, 169, 69);		
+}
+
+.produtos li:hover .produto-preco{		/*Usando o houver .produto-.produto-preco para mudar o preço quando o mouse passa em cima*/
+	font-size: 25px;		
+	color: rgb(236, 169, 69);		
+}
+
+/*------------------------------------------MODIFICANDO O ESTILO DO RODAPÉ-----------------------------------------------*/
+
+footer{
+	text-align: center;		/*alinhando o texto e a imagem*/
+	background: rgb(24, 19, 19);	/*imagem como rodapé ou só colocar uma cor, para usar imagem é só colocar url("/img/ e a imagem");*/
+	margin-top: 50px;		/*Espaçamento entre os produtos e o rodapé*/
+	padding: 40px;		/*Espaçamento da imagem interna do rodapé*/
+}
+
+.copyright{
+	color: white;		/*Mudando a cor do Copyright do rodapé*/
+	font-size: 15px;		/*Tamanho da fonte*/
+	font-family: 'Times New Roman', Times, serif;		/*Fonte usada na palavra*/
+	margin-top: 5px;	/*margem entre o topo da palavra para o logo*/
+}
+

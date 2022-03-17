@@ -1,0 +1,135 @@
+/*------------------------------------------MODIFICANDO O ESTULO DA NAVEGAÇÃO DO TOPO------------------------------------*/
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;	/*Palavra em Maiusculo*/
+	color: #000000;		/*Cor da palavra*/
+	font-weight: bold;		/*Fonte da palavra*/
+	font-size: 25px;		/*Tamanho da palavra*/
+	text-decoration: none;		/*Remover sublinhado ou decoração da palavra*/
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+/*------------------------------------------INTERAÇÃO COM O MOUSE EM CIMA------------------------------------------------*/
+
+nav a:hover{
+	background-color: #BBBBBB;		/*Cor de fundo quando passa o mouse em cima da palavra*/
+    color: rgb(236, 169, 69);		/*Cor da palavra quando o mouse estiver em cima*/
+	text-decoration: underline;		/*Quando o mouse etiver em cima, a palavra também vai ficar sublinhada*/
+}
+
+/*-----------------------------------------------ESTRUTURA DO FORMULÁRIO-------------------------------------------------*/
+
+main {		/*formalizando todo o conteudo que está no main no html*/
+
+}
+
+form{
+	margin-top: 40px;	/*Espaçamento do formulário ao topo*/
+}
+
+form label, form p{
+	display: block;		/*Display block para quebrar o paragrafo para não ter que ocupar toda a tela e ficar um abaixo do outro*/
+	font-size: 20px;	/*Tamanho de fonte*/
+	margin: 0 0 10px;	/*Espaçamento de margem*/
+}
+
+.input-padrao{
+	display: block;		/*Display block para quebrar o paragrafo para não ter que ocupar toda a tela e ficar um abaixo do outro*/
+	margin: 0 0 20px;	/*Espaçamento de margem*/
+	padding: 10px 25px;		/*Espaçamento dos campos a serem preenchidos para ficarem maiores*/
+	width: 50%;		/*Tamanho dos quadrados que vão ser preenchidos*/
+}	
+
+.marcacao{
+	margin-top: 10px;
+}
+
+.checkbox{		
+	margin-top: 20px;	/*Espaçamento da mensagem "Gostaria de receber nossas novidades por e-mail"*/
+
+}
+
+.horario{
+	margin-top: 20px;	/*Espaçamento da opção de horario até o "Gostaria de receber nossas ......"*/
+}
+
+/*-----------------------------------------------BOTÃO DE ENVIAR---------------------------------------------------------*/
+
+.enviar{
+	width: 40%;		/*Tamanho do botão*/
+	margin-top: 15px;		/*Espaçamento do topo do boão*/
+	padding: 15px 0px;		/*Espaçamento interno*/
+	background: rgb(42, 42, 255);		/*Cor de fundo do botão*/
+	color: white;		/*Cor da palavra do botão*/
+	font-weight: bolder;		/*Fonte da palavra do botão*/
+	font-size: 18px;		/*Tamanho da fonte da palavra*/
+	border: none;		/*Sem borda*/
+	border-radius: 5px;		/*Arredondamento das laterais*/
+	transition: 185ms;	/*Tempo de transição de uma cor para outra quando o mouse passa em cima, no caso ta em ms mas pode ser em s(segundos)*/
+	cursor: pointer;	/*Colocando com que quando o mouse passar em cima, mudará a seta para o dedinho*/
+}
+
+.enviar:hover{		/*Interação quando o mouse passa em cima do enviar*/
+	background: rgb(24, 19, 19);
+	color: rgb(236, 169, 69);
+}
+
+/*----------------------------------------------MODFICANDO A TABELA-----------------------------------------------------*/
+
+table{
+	margin: 25px 0 25px;	/*Espaçamento externo*/
+}
+
+thead{
+	background: #555555;	/*Cor de fundo do título DIA e HORARIO*/
+	color: white;		/*Cor da palavra de título DIA e HORÁRIO*/
+	font-weight: bolder;	/*Fonte da Palavra DIA e HORÁRIO*/
+}
+
+td , th{	/*É usado virgulo para os dois terem a mesa formaação de estilo, ou seja, será valido para os dois*/
+	border: 1px solid black;	/*Adicionando uma borda a tabela*/
+	padding: 5px 56px;		/*Espaçamento interno (A x L x C)*/
+}
+
+/*------------------------------------------MODIFICANDO O ESTILO DO RODAPÉ-----------------------------------------------*/
+
+footer{
+	text-align: center;		/*alinhando o texto e a imagem*/
+	background: rgb(24, 19, 19);	/*imagem como rodapé ou só colocar uma cor, para usar imagem é só colocar url("/img/ e a imagem");*/
+	margin-top: 50px;		/*Espaçamento entre os produtos e o rodapé*/
+	padding: 40px;		/*Espaçamento da imagem interna do rodapé*/
+}
+
+.copyright{
+	color: white;		/*Mudando a cor do Copyright do rodapé*/
+	font-size: 15px;		/*Tamanho da fonte*/
+	font-family: 'Times New Roman', Times, serif;		/*Fonte usada na palavra*/
+	margin-top: 5px;	/*margem entre o topo da palavra para o logo*/
+}
